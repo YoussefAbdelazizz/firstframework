@@ -1,0 +1,74 @@
+<section >
+<div class="container mx-auto mb-4 ">
+    <h1 class="text-center fw-bold text-uppercase mb-3 headercolor">portfolio component</h1>
+    <div class="div d-flex  align-content-center justify-content-center mt-0">
+    <div class="leftline me-3 mb-4"></div>
+    <i class="fa-solid fa-star headercolor text-center  mb-3  "></i>
+    <div class="leftline ms-3 mb-4"></div>
+</div> 
+    <div>
+        <div class="container">
+       <div class="row g-5">
+         <div (click)="ishidden=false;modelImg='/images/poert1.png'" class="col-lg-4 col-md-6 ">
+            <div class="rounded-3 overflow-hidden position-relative picture">
+                <img class="w-100 rounded-3" src="/images/poert1.png" alt="house photo">
+                <div class="layer  position-absolute start-0 top-0 h-100 w-100 d-flex justify-content-center align-content-center ">
+                    <i _ngcontent-akx-c19="" class="position-relative my-auto text-white fa-solid fa-plus fa-6x"></i>
+                </div>
+            </div>
+            </div>
+         <div (click)="ishidden=false;modelImg='/images/poert2.png'" class="col-lg-4 col-md-6">
+            <div class="rounded-3 overflow-hidden position-relative picture">
+                <img class="w-100 rounded-3" src="/images/poert2.png" alt="house photo">
+                <div class="layer  position-absolute start-0 top-0 h-100 w-100 d-flex justify-content-center align-content-center ">
+                    <i _ngcontent-akx-c19="" class="position-relative my-auto text-white fa-solid fa-plus fa-6x"></i>
+                </div>
+            </div>
+            </div>
+         <div (click)="ishidden=false;modelImg='/images/poert3.png'" class="col-lg-4 col-md-6">
+            <div class="rounded-3 overflow-hidden position-relative picture">
+                <img class="w-100 rounded-3" src="/images/poert3.png" alt="house photo">
+                <div class="layer  position-absolute start-0 top-0 h-100 w-100 d-flex justify-content-center align-content-center ">
+                    <i _ngcontent-akx-c19="" class="position-relative my-auto text-white fa-solid fa-plus fa-6x"></i>
+                </div>
+            </div>
+            </div>
+         </div>
+       <div  class="row g-5">
+         <div (click)="ishidden=false;modelImg='/images/poert1.png'" class="col-lg-4 col-md-6 ">
+            <div class="rounded-3 overflow-hidden position-relative picture">
+                <img class="w-100 rounded-3" src="/images/poert1.png" alt="house photo">
+                <div class="layer  position-absolute start-0 top-0 h-100 w-100 d-flex justify-content-center align-content-center ">
+                    <i _ngcontent-akx-c19="" class="position-relative my-auto text-white fa-solid fa-plus fa-6x"></i>
+                </div>
+            </div>
+            </div>
+         <div (click)="ishidden=false;modelImg='/images/poert2.png'" class="col-lg-4 col-md-6">
+            <div class="rounded-3 overflow-hidden position-relative picture">
+                <img class="w-100 rounded-3" src="/images/poert2.png" alt="house photo">
+                <div class="layer  position-absolute start-0 top-0 h-100 w-100 d-flex justify-content-center align-content-center ">
+                    <i _ngcontent-akx-c19="" class="position-relative my-auto text-white fa-solid fa-plus fa-6x"></i>
+                </div>
+            </div>
+            </div>
+         <div (click)="ishidden=false;modelImg='/images/poert3.png'" class="col-lg-4 col-md-6">
+            <div class="rounded-3 overflow-hidden position-relative picture">
+                <img class="w-100 rounded-3" src="/images/poert3.png" alt="house photo">
+                <div class="layer  position-absolute start-0 top-0 h-100 w-100 d-flex justify-content-center align-content-center ">
+                    <i _ngcontent-akx-c19="" class="position-relative my-auto text-white fa-solid fa-plus fa-6x"></i>
+                </div>
+            </div>
+            </div>
+         </div>
+      
+                <div
+                [class.d-none]="ishidden"  
+                (click)="hideModel($event.target , imgref)"
+                class="fullscreenModel model__ position-fixed start-0 w-100 top-0 h-100 bg-primary bg-opacity-25 d-flex justify-content-center align-items-center">
+                    <img #imgref class="fullscreenimg" [src]="modelImg" alt="">
+                </div>
+            </div>
+            </div>
+         </div>
+       
+</section>

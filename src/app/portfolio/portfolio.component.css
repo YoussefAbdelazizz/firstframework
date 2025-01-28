@@ -1,0 +1,39 @@
+section{
+    margin-top: 107px;
+}
+.maindiv{
+    height: 500px;
+    
+}
+section{
+
+    width: 100%;
+    
+}
+.leftline{
+    width: 80px;
+    height: 4px;
+    background-color: rgb(44, 62, 80);
+}
+.headercolor{
+    color: rgb(44, 62, 80);
+}
+.picture{
+    width: 400px;
+   margin-bottom: 40px;
+}
+.layer{
+    background-color: #1EBC9C;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.5s opacity;
+}
+.layer:hover{
+    opacity: 1;
+}
+.fullscreenModel{
+    z-index: 99999;
+}
+.fullscreenimg{
+    width:600px;
+}
